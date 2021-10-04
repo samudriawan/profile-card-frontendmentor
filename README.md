@@ -5,8 +5,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [The challenge](#the-challenge)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -15,20 +15,24 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ## Overview
 
-### The challenge
-
-- Build out the project to the designs provided
-
 ### Screenshot
 
 ![Preview Screenshot](images/Screenshot.png)
 
+<p align="center">
+### The challenge
+
+- Build out the project to the designs provided
+
 ### Links
 
-[Solution URL](https://www.frontendmentor.io/solutions/mobilefirst-using-sass-WHUiB0JTg) |
-[Live Site URL](https://samudriawan.github.io/profile-card-frontendmentor/) |
-[Challenge](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ)
-
+  <a href="https://www.frontendmentor.io/solutions/mobilefirst-using-sass-WHUiB0JTg" target="_blank">
+    Solution URL</a>|
+  <a href="https://samudriawan.github.io/profile-card-frontendmentor/" target="_blank">
+    Live Site URL</a>|
+  <a href="https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ" target="_blank">
+    Challenge</a>
+</p>
 ## My process
 
 ### Built with
