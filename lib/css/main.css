@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  max-width: 1440px;
+  min-height: 100vh;
+  background-color: #19a2ae;
+  background-image: url(../../images/bg-pattern-top.svg), url(../../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed;
+  background-size: 600px 600px;
+  background-position: -24em -19em, 11em 25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 376px) {
+  body {
+    background-size: auto;
+    background-position: -19em -36em, 41.5em 19.5em;
+  }
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 0.8em;
+  overflow: hidden;
+  box-shadow: 0 2em 3em rgba(45, 50, 72, 0.3);
+}
+@media screen and (min-width: 376px) {
+  .container {
+    width: 100%;
+  }
+}
+.container .card {
+  background-color: white;
+  text-align: center;
+  color: #6a6f81;
+}
+.container .card-bg {
+  max-width: 100%;
+  height: auto;
+}
+.container .card-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(-3.5em);
+}
+.container .card-image img {
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.container .card-profile {
+  margin-top: 4.2em;
+  margin-bottom: 1.2em;
+}
+.container .card-profile_name {
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d3248;
+}
+.container .card-profile_name span {
+  margin-left: 5px;
+  font-weight: 400;
+  color: #6a6f81;
+}
+.container .card-profile_loc {
+  font-size: 0.9rem;
+}
+.container .card-badges {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 1.2em 1em;
+  border-top: 1px solid #969696;
+}
+.container .card-badges_num {
+  font-weight: 700;
+  font-size: 18px;
+  color: #2d3248;
+  margin-bottom: 0.3em;
+}
+.container .card-badges_title {
+  font-weight: 400;
+  font-size: 0.7em;
+  color: #6a6f81;
+  letter-spacing: 0.1em;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 2px;
+  color: #2d3248;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=main.css.map */

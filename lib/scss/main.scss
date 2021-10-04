@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+// variables
+$primary-color: hsl(185, 75%, 39%); //Dark cyan
+$secondary-color: hsl(229, 23%, 23%); //Very dark desaturated blue
+$tertiary-color: hsl(227, 10%, 46%); //Dark grayish blue
+$neutral-color: hsl(0, 0%, 59%); //Dark gray
+$fm: 'Kumbh Sans', sans-serif;
+$fs-ns: 18px; //font size (name and stats)
+$fw-reguler: 400;
+$fw-bold: 700;
+
+// mixins
+@mixin flexbox($justify: flex-start, $direction: row) {
+	display: flex;
+	justify-content: $justify;
+	align-items: center;
+	flex-direction: $direction;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $fm;
+}
+
+body {
+	max-width: 1440px;
+	min-height: 100vh;
+	background-color: $primary-color;
+	background-image: url(../../images/bg-pattern-top.svg), url(../../images/bg-pattern-bottom.svg);
+	background-repeat: no-repeat, no-repeat;
+	background-attachment: fixed;
+	background-size: 600px 600px;
+	background-position: -24em -19em, 11em 25em;
+	@include flexbox(center, column);
+
+	@media screen and (min-width: 376px) {
+		background-size: auto;
+		background-position: -19em -36em, 41.5em 19.5em;
+	}
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	width: 90%;
+	border-radius: 0.8em;
+	overflow: hidden;
+	box-shadow: 0 2em 3em rgba($secondary-color, 0.3);
+
+	@media screen and (min-width: 376px) {
+		width: 100%;
+	}
+
+	.card {
+		background-color: white;
+		text-align: center;
+		color: $tertiary-color;
+
+		&-bg {
+			max-width: 100%;
+			height: auto;
+		}
+
+		&-image {
+			position: absolute;
+			left: 0;
+			right: 0;
+			transform: translateY(-3.5em);
+			img {
+				border: 5px solid white;
+				border-radius: 50%;
+			}
+		}
+
+		&-profile {
+			margin-top: 4.2em;
+			margin-bottom: 1.2em;
+			&_name {
+				margin-bottom: 7px;
+				font-size: $fs-ns;
+				font-weight: $fw-bold;
+				color: $secondary-color;
+
+				span {
+					margin-left: 5px;
+					font-weight: $fw-reguler;
+					color: $tertiary-color;
+				}
+			}
+			&_loc {
+				font-size: 0.9rem;
+			}
+		}
+
+		&-badges {
+			@include flexbox(space-around, row);
+			padding: 1.2em 1em;
+			border-top: 1px solid $neutral-color;
+
+			&_num {
+				font-weight: $fw-bold;
+				font-size: $fs-ns;
+				color: $secondary-color;
+				margin-bottom: 0.3em;
+			}
+
+			&_title {
+				font-weight: $fw-reguler;
+				font-size: 0.7em;
+				color: $tertiary-color;
+				letter-spacing: 0.1em;
+			}
+		}
+	}
+}
+
+.attribution {
+	position: absolute;
+	bottom: 2px;
+	color: $secondary-color;
+	font-size: 0.8em;
+	font-weight: 500;
+}
