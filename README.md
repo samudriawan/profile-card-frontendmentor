@@ -25,8 +25,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-[Solution URL](https://www.frontendmentor.io/solutions/mobile-first-with-sass-i5OXCRE6o) |
-[Live Site URL](https://samudriawan.github.io/order-summary-frontendmentor/) |
+[Solution URL](https://www.frontendmentor.io/solutions/mobilefirst-using-sass-WHUiB0JTg) |
+[Live Site URL](https://samudriawan.github.io/profile-card-frontendmentor/) |
 [Challenge](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ)
 
 ## My process
