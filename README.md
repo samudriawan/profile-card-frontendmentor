@@ -33,6 +33,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
   <a href="https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ" target="_blank">
     Challenge</a>
 </p>
+
 ## My process
 
 ### Built with
